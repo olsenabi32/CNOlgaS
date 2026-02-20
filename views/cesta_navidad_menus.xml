@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_cesta_navidad_root"
+              name="Cesta Navidad Olga"
+              web_icon="base,static/description/icon.png"
+              sequence="10"/>
+
+    <menuitem id="menu_cesta_navidad_cestas"
+              name="Cestas"
+              parent="menu_cesta_navidad_root"
+              action="action_cesta_navidad_cesta"
+              sequence="10"/>
+
+    <menuitem id="menu_cesta_navidad_productos"
+              name="Productos"
+              parent="menu_cesta_navidad_root"
+              action="action_cesta_navidad_producto"
+              sequence="20"/>
+
+    <menuitem id="menu_cesta_navidad_config"
+              name="Configuración"
+              parent="menu_cesta_navidad_root"
+              sequence="100"/>
+
+    <menuitem id="menu_cesta_navidad_lineas"
+              name="Líneas"
+              parent="menu_cesta_navidad_config"
+              action="action_cesta_navidad_linea"
+              sequence="10"/>
+</odoo>

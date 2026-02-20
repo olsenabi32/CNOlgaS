@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_agencia_destinos,access_agencia_destinos,model_agencia_destinos,base.group_user,1,1,1,1
-access_agencia_viajes,access_agencia_viajes,model_agencia_viajes,base.group_user,1,1,1,1
+access_cesta_navidad_producto,access_cesta_navidad_producto,model_cestanavidadolga_producto,base.group_user,1,1,1,1
+access_cesta_navidad_cesta,access_cesta_navidad_cesta,model_cestanavidadolga_cesta,base.group_user,1,1,1,1
+access_cesta_navidad_linea,access_cesta_navidad_linea,model_cestanavidadolga_linea,base.group_user,1,1,1,1
