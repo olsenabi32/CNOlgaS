@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_agencia_destinos_list" model="ir.ui.view">
+        <field name="name">agencia.destinos.list</field>
+        <field name="model">agencia.destinos</field>
+        <field name="arch" type="xml">
+            <list> 
+                <field name="name"/>
+                <field name="codigo"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_agencia_destinos_form" model="ir.ui.view">
+        <field name="name">agencia.destinos.form</field>
+        <field name="model">agencia.destinos</field>
+        <field name="arch" type="xml">
+            <form string="Destino">
+                <sheet>
+                    <group>
+                        <field name="name" placeholder="Ej. Almería"/>
+                        <field name="codigo" placeholder="Ej. +3404"/>
+                    </group>
+                    <group>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_agencia_destinos" model="ir.actions.act_window">
+        <field name="name">Destinos</field>
+        <field name="res_model">agencia.destinos</field>
+        <field name="view_mode">list,form</field> 
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea el primer destino
+            </p>
+        </field>
+    </record>
+
+</odoo>

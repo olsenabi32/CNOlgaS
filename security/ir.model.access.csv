@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_agencia_destinos,access_agencia_destinos,model_agencia_destinos,base.group_user,1,1,1,1
+access_agencia_viajes,access_agencia_viajes,model_agencia_viajes,base.group_user,1,1,1,1

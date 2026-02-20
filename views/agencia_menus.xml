@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_agencia_root"
+              name="Agencia de Viajes"
+              web_icon="base,static/description/icon.png"
+              sequence="10"/>
+
+    <menuitem id="menu_agencia_viajes_action"
+              name="Viajes"
+              parent="menu_agencia_root"
+              action="action_agencia_viajes"
+              sequence="10"/>
+
+    <menuitem id="menu_agencia_config" name="Configuración" parent="menu_agencia_root" sequence="100"/>
+
+    <menuitem id="menu_agencia_destinos_action"
+              name="Destinos"
+              parent="menu_agencia_config"
+              action="action_agencia_destinos"
+              sequence="10"/>
+
+</odoo>
