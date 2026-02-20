@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_cnvuestronombrep_root"
+              name="CNVuestroNombreP"
+              web_icon="base,static/description/icon.png"
+              sequence="10"/>
+
+    <menuitem id="menu_cnvuestronombrep_viajes_action"
+              name="Viajes"
+              parent="menu_cnvuestronombrep_root"
+              action="action_cnvuestronombrep_viajes"
+              sequence="10"/>
+
+    <menuitem id="menu_cnvuestronombrep_config"
+              name="Configuración"
+              parent="menu_cnvuestronombrep_root"
+              sequence="100"/>
+
+    <menuitem id="menu_cnvuestronombrep_destinos_action"
+              name="Destinos"
+              parent="menu_cnvuestronombrep_config"
+              action="action_cnvuestronombrep_destinos"
+              sequence="10"/>
+</odoo>

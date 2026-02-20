@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_cesta_navidad_producto_list" model="ir.ui.view">
+        <field name="name">cestanavidadolga.producto.list</field>
+        <field name="model">cestanavidadolga.producto</field>
+        <field name="arch" type="xml">
+            <list string="Productos">
+                <field name="name"/>
+                <field name="categoria"/>
+                <field name="precio"/>
+                <field name="stock"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_cesta_navidad_producto_form" model="ir.ui.view">
+        <field name="name">cestanavidadolga.producto.form</field>
+        <field name="model">cestanavidadolga.producto</field>
+        <field name="arch" type="xml">
+            <form string="Producto">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="categoria"/>
+                        <field name="precio"/>
+                        <field name="stock"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_cesta_navidad_producto" model="ir.actions.act_window">
+        <field name="name">Productos</field>
+        <field name="res_model">cestanavidadolga.producto</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
